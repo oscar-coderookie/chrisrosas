@@ -1,0 +1,710 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 2px;
+}
+
+.menu-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 100%;
+    height:auto;
+    z-index: 4;
+}
+.iconos-social{
+   position: fixed;
+   right: 0;
+   top: 35%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   z-index: 100;
+   width: 50px;
+}
+.iconos-social i{
+    color: white;
+    text-decoration: none;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    transition: all .5s;
+}
+.iconos-social i:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0  .5rem rgba(0, 0, 0, 0.2);
+}
+.fa-facebook{
+    background: #3b5998 ;
+    border-radius: 0 0 0 1rem ;
+}
+.fa-twitter{
+    background: #00acee;
+    border-radius: 1rem 0 0 0 ;
+}
+.fa-instagram{
+    background: #3f729b;
+    
+}
+.fa-youtube{
+    background:  #c4302b;
+}
+.fa-whatsapp{
+    background: #00bb2d;
+}
+.logo-corporativo{
+    height: 100%;
+    width: 30%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo-corporativo img{
+    width: 200px;
+}
+.contenedor-menu{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: all .5s ease;
+    font-size: 12pt;
+    font-weight: 900;
+    
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconos-inicio{
+    padding: 0 10px;
+}
+.contenedor-menu a{
+    font-size: 10pt;
+    font-weight: 500;
+}
+.contenedor-menu a i{
+    font-size: 14pt;
+    padding: 5px;
+}
+.contenedor-menu a:hover{
+    color:  rgb(255, 230, 87);
+    text-shadow: 2px 2px 5px #333;
+    
+}
+
+.inicio{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* Este es el contenedor de la animación// */
+.logo-animacion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-animado{
+    width: 50%;
+    height: auto;
+}
+.contenedor-botones{
+    display: flex;
+    width: 60px;
+    justify-content:center;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+}
+.boton-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    transition: all .4s ease;
+    position: relative;
+    z-index: 20;
+}
+.boton-inicio:hover{
+    background: rgba(255, 255, 255, 0.548)
+    
+}
+    #icono-wpp{
+        width: 60px;
+        height: 60px;
+        margin: 20px;
+        text-shadow:5px 5px 15px #333;
+        cursor:pointer;
+        
+    }
+    #icono-inicio{
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        transition: all .6s ease;
+        
+    }
+    #icono-inicio:hover{
+        display: flex;
+        align-items: center;
+        text-shadow:0px 1px 5px #333;
+    }
+   
+.contacto{
+   background: url(../img/home-fondo.jpg);
+   background-color: black;
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.contacto h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 20px 0px;
+}
+form{
+    width: 500px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+form h2{
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+form p{
+    color: white;
+    margin: auto;
+    padding-bottom: 20px;
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton {
+    background: #ffc44471;
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+#boton:hover {
+    background: rgb(255, 230, 87);
+    color: rgb(0, 0, 0);
+    
+}
+footer nav{
+    background: rgb(31, 31, 31);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+.politicas{
+    list-style: none;
+    font-size: 10px;
+}
+.politicas li a{
+    font-size: 15px;
+    margin: 5px 0px;
+    font-weight: 300;
+    text-transform: capitalize;
+    transition: all .5s ease-in
+}
+.politicas li a:hover{
+    color: rgb(255, 230, 87) ;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6)
+}
+.logotipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logotipo img{
+    width: 250px;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+}
+.logotipo p{
+    color: white;
+    font-size: 12px;
+    padding: 3px
+}
+.copyright{
+    background: rgb(44, 44, 44);
+    text-align: center;
+    color: silver;
+    display: flex;
+    height: 20pt;
+    align-content: center;
+    justify-content: center;
+}
+.copyright p{
+    font-weight: 300;
+    margin-left: 5px;
+    font-family: lucida sans regular;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+}
+.copyright span{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    opacity: .5;
+    margin-left: 5px;
+    font-weight: 300;
+    font-family: lucida sans regular;
+    font-size: 10pt;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6)
+}
+/* esta es la seccion de Bio// */
+.about-me{
+    background: url(../img/fondo-bio.jpg) ;
+    background-size: 100% 100%;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.biografia{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.titulo-bio{
+    text-align: center;
+    width: 100vw;
+    height: 100px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-me h1{
+    color: white;
+    font-size: 30pt;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 3px 1px 7px rgba(0, 0, 0, 0.6)
+}
+.about-me h2{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.about-me h3{
+    color: white;
+    font-size: 12pt;
+    font-weight: 300;
+    width:100%;
+    text-align: justify;
+    margin: 0px 20px;
+}
+.contenedor-bio{
+    background: rgba(197, 197, 197, 0.4);
+    width: 70vh;
+    height: auto;
+    padding: 15px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contenedor-bio h2{
+    font-size: 25px;
+    margin: 5px 0px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);  
+    font-weight: 600;
+}
+.contenedor-bio p{
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); 
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.contenedor-bio img{
+    width: 100%;
+    object-fit: contain;
+    object-position:40% 3%;
+    height: auto;
+    padding: 0;
+    border-radius: 3px;
+    box-shadow: 3px 1px 7px rgba(0, 0, 0, 0.6)
+}
+.logotipos-dy{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logotipos-dy h2{
+    padding: 20px 0px; 
+}
+.contenedor-logos-dy{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+.contenedor-logos-dy img{
+    height: 100px;
+}
+/* --- esta es la Seccion Servicios /// */
+.servicios{
+    background-image: url(https://i.pinimg.com/originals/0f/e4/b5/0fe4b5c1a6920ba312c390ffe4dd0084.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+
+}
+.gradiente{
+    background: linear-gradient(90deg,#0f3386,hsl(0, 80%, 43%));
+    opacity: 0.35;
+    height: 100vh;
+    width: 100vw;
+    position:absolute;
+    z-index: 2;
+}
+.lista-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    z-index: 4;
+    position: relative;
+}
+.lista-servicios li{
+    background: rgba(170, 170, 170, 0.76);
+    padding: 20px;
+    margin: 0px 5px;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.lista-servicios li:hover{
+    background:rgba(66, 66, 66, 0.787);
+}
+.lista-servicios li a{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    font-size: 12pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.titulo-servicios{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px;
+    color: white;
+    text-transform: uppercase;
+    z-index: 3;
+    position: relative;
+}
+.titulo-servicios h1{
+    font-weight: 1200px;
+    letter-spacing: 5px;
+    font-size: 30pt;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+/* Esta es la Seccion Eventos: */
+.artistas{
+    height:auto;
+    background: url(https://c.wallhere.com/photos/bf/9f/podiums_concerts_lights_arms_up-121057.jpg!d);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+}
+
+.artistas h1{
+    color: white;
+    text-shadow: 1px 1px 4px rgb(54, 54, 54);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30pt;
+    padding: 30px 0px;
+    z-index: 15;
+}
+.grid-artistas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    width: 70%;
+    margin:auto;
+    grid-gap:20px;
+    padding: 80px 0;
+    overflow: hidden;
+    z-index: 10;
+}
+.grid-artistas img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+.galeria-artistas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    width: 70%;
+    margin:auto;
+    grid-gap:10px;
+    padding: 20px 0;
+    overflow: hidden;
+    margin-bottom: 40px;
+    z-index: 20;
+}
+.galeria-artistas figure{
+    position: relative;
+}
+.galeria-artistas figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(117, 117, 117, 0.5);
+    transition: all .5s ease;
+    border-radius: 10px;
+    opacity:0;
+    visibility: hidden;
+    text-align: center;
+}
+.capa h3{
+    position: relative;
+    top: 50%;
+    color: white;
+    font-size: 16pt;
+    width:100%;
+    padding: 0px 10px;
+    font-weight: 500;
+}
+.galeria-artistas figure:hover> .capa{
+    opacity:1;
+    visibility: visible;
+}
+.galeria-artistas figure:hover> .capa h3{
+    text-shadow: 1px 1px 4px rgb(63, 63, 63);
+}
+
+.galeria-artistas img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    height: auto;
+    transition: transform 0.5s;
+    border-radius: 10px;
+    box-shadow: 0 15 25px rgba(0, 0, 0, 0.5);
+}
+
+@media all and (max-width: 1200px){
+    .about-me h1{
+        position: relative;
+        top: 0;
+    }
+.menu-navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+.logo-corporativo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-corporativo img{
+   padding-top: 40px;
+}
+
+.contenedor-menu{
+    width: 100vw;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-menu a i{
+    font-size: 8px;
+    padding: 2px;
+ }
+ .contenedor-menu a{
+    font-size: 8pt;
+    font-weight: 500;
+}
+.contenedor-menu a i{
+    font-size: 10pt;
+    padding: 5px;
+}
+ .contenedor-logos-dy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+.contenedor-logos-dy img{
+    height: 40px;
+    margin: 0px 5px;
+}
+.lista-servicios{
+    padding:0
+}
+.lista-servicios li a{
+    font-size:8pt ;
+}
+.contenedor-bio{
+    width: auto;
+    height: auto;
+}
+.grid-artistas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 90%;
+    margin:auto;
+    grid-gap:10px;
+    padding: 40px 0;
+    overflow: hidden;
+    z-index: 10;
+}
+.grid-artistas img{
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+.galeria-artistas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 90%;
+    margin:auto;
+    grid-gap:20px ;
+    overflow: hidden;
+    margin-bottom: 40px;
+    z-index: 20;
+}
+ form{
+    width: 300px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+form p{
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    font-size: 8pt;
+}
+form input, textarea{
+    font-size: 8pt;
+}
+ .politicas li a{
+     font-size: 8pt;
+ }
+.logotipo img{
+     width: 150px;
+     height: auto;
+ }
+.copyright p{
+    font-size: 6pt;
+}
+.copyright span{
+    font-size: 6pt;
+}
+
+}
